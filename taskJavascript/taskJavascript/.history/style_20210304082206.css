@@ -1,0 +1,377 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0 0 0 0;
+  background: transperant;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#container {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0%;
+  width: 100vw;
+  height: 100vh;
+}
+
+.BG,
+.y,
+.textOne,
+.textTwo,
+.textThree,
+.beef,
+.chik-sand,
+.halal,
+.white,
+.macD,
+.macT,
+.macO,
+.macDel,
+.app,
+.num1,
+.num2,
+.logo,
+.logo-small {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  transition: all linear 0.5s;
+}
+
+.BG {
+  background: url(images/desktop/BG.png) bottom right no-repeat #181715;
+  background-size: auto 100%;
+  left: 100vw;
+  transition: none;
+}
+
+.y {
+  background: url(images/desktop/y.png) right top no-repeat;
+  background-size: auto 100%;
+  background-position: center;
+  left: 150vw;
+
+  transition: none;
+}
+
+.tran {
+  transition: all linear 0.5s;
+}
+
+/*.y-play
+  {
+      transform: rotate3d(0, 0, 1, 0);
+      transform-origin: bottom center;
+      top: 0; 
+  }*/
+
+.textOne {
+  background: url(images/desktop/bigt.png) top center no-repeat;
+  margin-top: 35px;
+  background-size: auto 15%;
+  transform: scale(0.5);
+  opacity: 0;
+  transition: all cubic-bezier(0, 0, 1, 1.2) 0.25s;
+  transform-origin: top center;
+}
+
+.textTwo {
+  background: url(images/desktop/chik.png) top center no-repeat;
+  margin-top: 150px;
+  margin-left: 70px;
+  background-size: auto 8%;
+  transform: scale(0.5);
+  opacity: 0;
+  transition: all cubic-bezier(0, 0, 1, 1.2) 0.25s;
+  transform-origin: top center;
+  left: -3vw !important;
+}
+
+.textThree {
+  background: url(images/desktop/lftra.png) center center no-repeat;
+  margin-top: -100px;
+  margin-left: 50px;
+  background-size: auto 5%;
+  transform: scale(0.5);
+  opacity: 0;
+  transition: all cubic-bezier(0, 0, 1, 1.2) 0.25s;
+  transform-origin: center center;
+  left: -3vw !important;
+}
+
+.beef {
+  background: url(images/desktop/beef.png) bottom left no-repeat;
+  margin-left: -105px;
+
+  background-size: auto 85%;
+  /* transform: scale(0.5);*/
+  opacity: 0;
+  transition: all cubic-bezier(0, 0, 0, 1.2) 0.25s;
+  transform-origin: top center;
+  bottom: -3vw !important;
+}
+
+.chik-sand {
+  background: url(images/desktop/chik-sand.png) bottom right no-repeat;
+  margin-left: 50px;
+  background-size: auto 85%;
+  opacity: 0;
+  transition: all cubic-bezier(0, 0, 1, 1.2) 0.25s;
+  transform-origin: top center;
+  bottom: -3vw !important;
+}
+.halal {
+  background: url(images/desktop/7lal.png) center center no-repeat;
+  margin-top: 180px;
+  background-size: auto 15%;
+  transform: scale(0.9);
+  opacity: 0;
+  transition: all cubic-bezier(0, 0, 0, 1.2) 0.25s;
+  transform-origin: center center;
+}
+.logo-small {
+  background: url(images/desktop/logo-small.png) top left no-repeat;
+  background-size: contain;
+  background-size: auto 60%;
+  top: -50vh;
+}
+
+.white {
+  background: #fff;
+  display: none;
+  transition: none;
+}
+
+/*The other side*/
+.logo {
+  background: url(images/desktop/mac-tawsel-icon.png) top center no-repeat;
+  background-size: contain;
+
+  top: -50vh;
+}
+
+.t1 {
+  background: url(images/desktop/mcdelv.png) center center no-repeat;
+  margin-top: 150px;
+  margin-left: 70px;
+  background-size: auto 8%;
+  transform: scale(0.5);
+  opacity: 0;
+  transition: all cubic-bezier(0, 0, 0, 1.2) 0.25s;
+  transform-origin: top center;
+  left: -3vw !important;
+}
+.t2 {
+  background: url(images/desktop/mactawsel-text.png) center center no-repeat;
+  margin-top: 150px;
+  margin-left: 70px;
+  background-size: auto 50%;
+  transform: scale(0.5);
+  opacity: 0;
+  transition: all cubic-bezier(0, 0, 1, 1.2) 0.25s;
+  transform-origin: top center;
+  left: -3vw !important;
+}
+
+.t3 {
+  background: url(images/desktop/58.png) center center no-repeat;
+  margin-top: 150px;
+  margin-left: 70px;
+  background-size: auto 50%;
+  transform: scale(0.5);
+  opacity: 0;
+  transition: all cubic-bezier(0, 0, 1, 1.2) 0.25s;
+  transform-origin: top center;
+  left: -3vw !important;
+}
+
+.play {
+  top: 0;
+  left: 0;
+  transform: scale(1);
+  opacity: 1;
+}
+
+.bg-play {
+  left: 10vw;
+}
+
+.admix-close-button,
+.admix-close-button:after,
+.wrap {
+  width: 50px !important;
+  height: 50px !important;
+}
+
+@media screen and (max-width: 800px) {
+  .BG {
+    background: url(images/mobile/BG.png) top center no-repeat #181715;
+    background-size: auto 200%;
+  }
+
+  .beef {
+    top: -400px !important;
+    background: url(images/mobile/beef.png) bottom left no-repeat;
+    background-size: auto 20%;
+    margin-left: 270px;
+    opacity: 0;
+    transition: all cubic-bezier(0, 0, 1, 1.2) 0.25s;
+    transform-origin: top center;
+    bottom: -3vw !important;
+    display: inline-block;
+  }
+  .chik-sand {
+    top: -15px !important;
+    background: url(images/mobile/chik-and.png) bottom right no-repeat;
+    margin-left: -220px;
+    background-size: auto 22%;
+    opacity: 0;
+    transition: all cubic-bezier(0, 0, 1, 1.2) 0.25s;
+    transform-origin: top center;
+    bottom: -3vw !important;
+  }
+  .halal {
+    background: url(images/mobile/7lal.png) center center no-repeat;
+    margin-top: 200px;
+    margin-left: 25px;
+    background-size: auto 10%;
+    transform: scale(0.9);
+    opacity: 0;
+    transition: all cubic-bezier(1, 1, 1, 1.2) 0.25s;
+    transform-origin: center center;
+  }
+  .y {
+    background: url(images/mobile/y.png) bottom center no-repeat #181715;
+    width: 100vw;
+    height: 50vh;
+    top: 100vh;
+    transform: none;
+    background-size: auto 100%;
+    transform-origin: top right;
+  }
+
+  .tran {
+    transition: all linear 0.5s;
+  }
+
+  .y-play {
+    transform: rotate3d(0, 0, 1, 0);
+    transform-origin: bottom center;
+    top: 50vh;
+  }
+
+  .textOne {
+    background: url(images/mobile/bigt.png) top center no-repeat;
+    background-size: contain;
+    background-size: auto 6%;
+    margin-top: 200px;
+    margin-left: 28px;
+  }
+
+  .textTwo {
+    background: url(images/mobile/chik.png) bottom center no-repeat;
+    background-size: contain;
+    transform-origin: bottom center;
+    background-size: auto 4%;
+    margin-top: -700px;
+    margin-left: 60px;
+  }
+
+  .textThree {
+    background: url(images/desktop/lftra.png) center center no-repeat;
+    margin-top: -150px;
+    margin-left: 60px;
+    background-size: auto 3%;
+    transform: scale(0.5);
+    opacity: 0;
+    transition: all cubic-bezier(0, 0, 0, 1.2) 0.25s;
+    transform-origin: center center;
+    left: -3vw !important;
+  }
+
+  .logo-small {
+    background: url(images/mobile/logo.png) center center no-repeat;
+    background-size: contain;
+    transform: scale(0.5);
+    background-size: auto 50%;
+    margin-top: -250px;
+    margin-left: 30px;
+  }
+
+  .text {
+    background: url(images/mobile/text.png) center center no-repeat;
+    background-size: contain;
+  }
+
+  .logo {
+    background: url(images/mobile/logo.png) top center no-repeat;
+    background-size: contain;
+  }
+
+  /* .t1
+      {
+          background: url(images/mobile/t1.png) center center no-repeat;
+          background-size: contain;
+      }
+
+      .p1
+      {
+          background: url(images/mobile/p1.png) center center no-repeat;
+          background-size: contain;
+      }
+
+      .t2
+      {
+          background: url(images/mobile/t2.png) center center no-repeat;
+          background-size: contain;
+      }
+
+      .p2
+      {
+          background: url(images/mobile/p2.png) center center no-repeat;
+          background-size: contain;
+      }
+
+      .t3
+      {
+          background: url(images/mobile/t3.png) center center no-repeat;
+          background-size: contain;
+      }
+
+      .p3
+      {
+          background: url(images/mobile/p3.png) center center no-repeat;
+          background-size: contain;
+          
+      }*/
+
+  .play {
+    top: 0;
+    left: 0;
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  .y-play {
+    left: 0;
+  }
+}
+
+@media screen and (max-height: 600px), screen and (min-width: 1400px) {
+}
+
+@media (min-aspect-ratio: 16/9) {
+}
+
+@media (max-aspect-ratio: 16/9) {
+}
